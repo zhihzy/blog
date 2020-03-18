@@ -1,0 +1,40 @@
+body {
+    background-image: url(http://pic1.win4000.com/wallpaper/2017-11-25/5a1913d431091.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ant-input-affix-wrapper {
+    border-radius: 3px;
+    margin-bottom: .7rem;
+}
+
+.ant-card {
+    border-radius: 5px;
+}
+
+.ant-btn-primary {
+    border-radius: 3px;
+}
+
+.login-alert {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.login-input {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ant-alert-warning {
+    border-radius: 20px !important;
+}
+
+.ant-btn-primary {
+    margin-top: .7rem !important;
+}

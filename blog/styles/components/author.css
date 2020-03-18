@@ -1,0 +1,27 @@
+.author {
+    text-align: center;
+    background: #fff;
+    border-radius: 3px;
+    margin-left: .5rem;
+    background-image: url(http://localhost:3000/author_bg.jpg);
+    background-repeat: no-repeat;
+}
+
+.author_avatar {
+    padding-top: 1.7rem;
+}
+
+.ant-avatar-image {
+    background: #9cdffe;
+}
+
+.author_text {
+    color: #ccc;
+    font-size: .7rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: .7rem;
+}
+
+.author_gethub {
+    padding: .7rem;
+}

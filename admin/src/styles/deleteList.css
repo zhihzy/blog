@@ -1,0 +1,12 @@
+.list-item {
+    width: 100%;
+    color: #999;
+}
+
+.list-item>.ant-col:not(:last-child) {
+    padding-right: .7rem;
+    line-height: 32px !important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

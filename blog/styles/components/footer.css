@@ -1,0 +1,10 @@
+.footer_div {
+    padding: .7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    color: #fff;
+    text-align: center;
+}

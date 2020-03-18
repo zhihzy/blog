@@ -1,0 +1,32 @@
+.index_list_item {
+    background: #fff;
+    border-radius: 3px;
+}
+
+.list_title {
+    text-align: center;
+    padding: .7rem;
+    font-size: 1rem;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.ant-list-item {
+    border-bottom: none !important;
+    padding: 0;
+    padding-bottom: .6rem;
+}
+
+.list_content,
+.list_info_years {
+    padding: 0 .7rem;
+    line-height: 1.7rem;
+}
+
+.list_info {
+    text-align: right;
+    color: #ccc;
+    font-size: .7rem;
+}

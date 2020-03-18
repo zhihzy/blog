@@ -1,0 +1,38 @@
+.article-title {
+    margin-bottom: 1.1rem !important;
+}
+
+.border-radius,
+.ant-btn,
+.ant-select-selector {
+    border-radius: 5px !important;
+}
+
+.show-markdown {
+    background: #eee;
+    height: 33.8rem;
+    padding: 4px 11px;
+    word-wrap: break-word;
+    overflow-y: scroll;
+}
+
+.introduce-html {
+    background: #eee;
+    margin: .3rem 0;
+    padding: 4px 11px;
+    height: 4.5rem;
+    overflow-y: scroll;
+    word-wrap: break-word;
+}
+
+button.ant-btn.ant-btn-primary {
+    margin-top: 0 !important;
+}
+
+.article-btn {
+    margin-bottom: 1.1rem !important;
+}
+
+.ant-layout {
+    background: #fff !important;
+}
