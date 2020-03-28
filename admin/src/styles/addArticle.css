@@ -10,10 +10,15 @@
 
 .show-markdown {
     background: #eee;
-    height: 33.8rem;
+    height: 34.6rem;
     padding: 4px 11px;
     word-wrap: break-word;
     overflow-y: scroll;
+}
+
+textarea.ant-input {
+    white-space: nowrap;
+    overflow-x: scroll;
 }
 
 .introduce-html {

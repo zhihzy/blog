@@ -15,13 +15,21 @@
     background: #9cdffe;
 }
 
+.author_name {
+    padding-top: .7rem;
+}
+
+.account {
+    margin: 0 .7rem;
+}
+
 .author_text {
     color: #ccc;
     font-size: .7rem;
-    border-bottom: 1px solid #eee;
-    padding-bottom: .7rem;
+    padding-top: .7rem;
 }
 
 .author_gethub {
     padding: .7rem;
+    padding-bottom: 1.1rem;
 }

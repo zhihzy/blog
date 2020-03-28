@@ -1,0 +1,32 @@
+.label-ul {
+    list-style: none;
+    padding: 0;
+}
+
+.label {
+    padding: 1rem;
+    overflow: hidden;
+    background: #fff !important;
+}
+
+.label-ul li {
+    float: left;
+    margin: 0 1rem 1rem 0;
+}
+
+.label-item {
+    font-size: .7rem;
+    border-radius: 3px;
+    padding: .3rem;
+    border: 1px solid #eee;
+}
+
+.ant-divider-horizontal {
+    margin: 0;
+    margin-bottom: .7rem;
+}
+
+.label-title {
+    margin-bottom: .7rem;
+    color: #676767;
+}

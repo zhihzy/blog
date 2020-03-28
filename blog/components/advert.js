@@ -1,9 +1,24 @@
+import React, { useState } from 'react'
+import { Divider } from 'antd'
 import '../styles/components/advert.css'
-const Advert=()=>(
-    <div className="advert_div comm_div">
-        <img width="100%" src="https://user-gold-cdn.xitu.io/15836742954839a655b65af9fb57731ecceff10f255be.jpg"/>
-        <img width="100%" src="https://user-gold-cdn.xitu.io/2020/3/15/170ddb55664fc05e?imageView2/1/w/1304/h/734/q/85/format/webp/interlace/1"/>
-        <img width="100%" src="https://user-gold-cdn.xitu.io/2020/3/9/170bcf0fa6062286?imageView2/1/w/1304/h/734/q/85/format/webp/interlace/1"/>
-    </div>
-)
+const Advert = () => {
+    const [data, setDate] = useState([
+        '前端', '后端', 'css', 'html', 'vue', 'react', 'node', 'mysql', 'webpack'
+    ])
+    return (
+        <div className="label comm_div">
+            <div className="label-title">热门标签</div>
+            <Divider />
+            <ul className="label-ul">
+                {
+                    data.map((item, index) => {
+                        return (
+                            <li key={index}><a><span className="label-item">{item}</span></a></li>
+                        )
+                    })
+                }
+            </ul>
+        </div>
+    )
+}
 export default Advert

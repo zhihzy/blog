@@ -1,7 +1,5 @@
 body {
-    background-image: url(https://img.t.sinajs.cn/t6/skin/skin041/images/body_bg.jpg?id=1410943047113);
-    background-repeat: no-repeat;
-    background-color: #1c1a18 !important;
+    background-color: #f4f5f5 !important
 }
 
 .index_main {
@@ -14,8 +12,4 @@ body {
     background: #fff;
     border-radius: 3px;
     padding: .3rem;
-}
-
-.advert_div img:not(:last-child) {
-    padding-bottom: .3rem;
 }

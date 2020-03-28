@@ -11,6 +11,7 @@ class HomeController extends Controller {
     blog_article.id as id, 
     blog_article.type_id as type_id, 
     blog_article.title as title, 
+    blog_article.view_count as count, 
     FROM_UNIXTIME(blog_article.addTime, '%Y-%m-%d %H:%i:%s') as addTime,
     blog_article.introduce as introduce, 
     blog_article.content as content 

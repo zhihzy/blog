@@ -16,6 +16,10 @@ pre {
     background-color: #282c34 !important;
 }
 
+img {
+    width: 100%;
+}
+
 .toc-h {
     font-size: 1.3rem;
     color: #777777;
