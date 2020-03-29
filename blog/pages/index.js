@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Router from 'next/router'
 import dynamic from 'next/dynamic'
 // import Link from 'next/link'
@@ -13,9 +13,12 @@ const Author = dynamic(import('../components/author'))
 const Advert = dynamic(import('../components/advert'))
 const Footer = dynamic(import('../components/footer'))
 import api from '../config/apiUrl'
+import Loading from '../components/loading'
 const Home = (list) => {
   let [data, setData] = useState(list.data)
   const [isload, setIsLoad] = useState(false)
+  useEffect(()=>{
+  },[])
   const renderer = new marked.Renderer()
   marked.setOptions({
     renderer,
@@ -49,6 +52,9 @@ const Home = (list) => {
                   bordered
                   itemLayout="vertical"
                   dataSource={data}
+                  pagination={{
+                    pageSize: 5
+                  }}
                   renderItem={item => (
                     <div className="cursor-hand" onClick={() => { jumpDetalis(item.id) }}>
                       {/* <Link href={{ pathname: '/details', query: { id: item.id } }}> */}
@@ -61,7 +67,7 @@ const Home = (list) => {
                                 <CalendarOutlined style={{ color: '#ccc' }} /><span className="b-span">{item.addTime.slice(0, 10)}</span>
                               </Breadcrumb.Item>
                               <Breadcrumb.Item>
-                                <FileOutlined style={{ color: '#ccc' }} /><span className="b-span">文章</span>
+                                <FileOutlined style={{ color: '#ccc' }} /><span className="b-span">{item.type_name}</span>
                               </Breadcrumb.Item>
                               <Breadcrumb.Item>
                                 <FireOutlined style={{ color: '#ccc' }} /><span className="b-span">{item.count}</span>
@@ -79,11 +85,12 @@ const Home = (list) => {
           </Col>
           <Col xs={0} sm={0} md={6} lg={5} xl={4}>
             <Author />
+            <Loading />
             <Advert />
           </Col>
         </Row>
+        <Footer />
       </div>
-      <Footer />
     </div>
   )
 }

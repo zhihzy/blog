@@ -2,14 +2,13 @@ import { useState } from 'react';
 import dynamic from 'next/dynamic'
 import { Row, Col, Breadcrumb, Affix } from 'antd'
 import { CalendarOutlined, ReadOutlined, BookOutlined } from '@ant-design/icons'
-import '../styles/pages/details.css'
 import marked from 'marked'
 import hljs from 'highlight.js'
 import Tocify from '../components/tocif.tsx'
+import '../styles/pages/details.css'
 import 'highlight.js/styles/monokai-sublime.css'
 const Header = dynamic(import('../components/header'))
 const Author = dynamic(import('../components/author'))
-const Advert = dynamic(import('../components/advert'))
 import axios from 'axios';
 import api from '../config/apiUrl'
 const Details = (props) => {
@@ -41,7 +40,7 @@ const Details = (props) => {
                 <Row justify="center">
                     <Col className="details_div" xs={24} sm={24} md={18} lg={18} xl={13}>
                         <div className="bread_div">
-                            <Breadcrumb>
+                            <Breadcrumb separator=">">
                                 <Breadcrumb.Item><a href="/">首页</a></Breadcrumb.Item>
                                 <Breadcrumb.Item><a href="/">{data.type_name}</a></Breadcrumb.Item>
                                 <Breadcrumb.Item>{data.title}</Breadcrumb.Item>
@@ -60,7 +59,6 @@ const Details = (props) => {
                     </Col>
                     <Col xs={0} sm={0} md={6} lg={5} xl={4}>
                         <Author />
-                        <Advert />
                         <Affix offsetTop={-8}>
                             <div className="datailed-nav comm_div">
                                 <div className="nav-title">文章目录</div>

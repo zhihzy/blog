@@ -10,6 +10,8 @@ module.exports = app => {
   // default
   router.get('/default/index', controller.default.home.getInfo);
   router.get('/default/details/:id', controller.default.home.getDetailsById);
+  router.get('/default/getType', controller.default.home.getType);
+  router.get('/default/getTypeInfoById/:id', controller.default.home.getTypeInfoById);
   // admin
   router.post('/admin/login', controller.admin.home.checkLogin);
   router.get('/admin/type',adminauth,controller.admin.home.getType);

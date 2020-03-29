@@ -16,6 +16,10 @@ pre {
     background-color: #282c34 !important;
 }
 
+.datailed-nav {
+    padding-right: .7rem;
+}
+
 img {
     width: 100%;
 }

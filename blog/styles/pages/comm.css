@@ -1,9 +1,14 @@
 body {
-    background-color: #f4f5f5 !important
+    background-color: #f4f5f5 !important;
 }
 
 .index_main {
     padding-top: .5rem;
+    margin-top: 3.2rem;
+}
+
+.ant-affix {
+    top: 2.8rem !important;
 }
 
 .comm_div {

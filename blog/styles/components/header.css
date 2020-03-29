@@ -1,8 +1,16 @@
 .header {
-    background: #fff;
+    background: #393D49;
     border-bottom: 1px solid #eee;
     overflow: hidden;
     height: 3.2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.ant-menu-dark {
+    background: #393D49 !important;
 }
 
 .header_name {

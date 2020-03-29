@@ -1,7 +1,5 @@
 .footer_div {
-    color: #777777;
+    color: #888888;
     padding: .7rem;
-    display: flex;
-    flex-direction: column;
     text-align: center;
 }

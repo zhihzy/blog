@@ -24,6 +24,10 @@
     font-size: 1.1rem;
 }
 
+.ant-pagination {
+    padding: .7rem 0;
+}
+
 .cursor-hand {
     cursor: default;
     border-bottom: 1px solid #eee;
@@ -31,6 +35,14 @@
 
 p {
     margin-bottom: 0;
+}
+
+.ant-spin.ant-spin-show-text .ant-spin-text {
+    padding-left: .7rem;
+}
+
+.ant-spin-spinning {
+    display: flex;
 }
 
 .b-span {
